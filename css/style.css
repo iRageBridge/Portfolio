@@ -1,0 +1,688 @@
+/*Devices over 1600px wide (Some laptops and most monitors/TVs under UHD)*/
+@media screen 
+  and (min-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    body{
+        background-color: #222222;
+    }
+
+    #background{
+        width: 600px;
+        margin-left: 35%;
+        margin-top: 2%;
+        z-index: 0;
+    }
+
+    #orangeS{
+        font-family: "Franklin Gothic Heavy";
+        color: orangered;
+        top: -13%;
+        margin-left: 38%;
+        position: absolute;
+        margin left: 50px;
+        font-style: bold;
+        font-size: 530px;
+        text-decoration: none;
+    }
+
+    #blackS{
+        font-family: "Franklin Gothic Heavy";
+        color: black;
+        top: 0%;
+        margin-left: 47%;
+        position: absolute;
+        margin left: 50px;
+        font-style: bold;
+        font-size: 530px;
+        text-decoration: none;
+    }
+
+    #simon{
+        font-family: "Franklin Gothic Heavy";
+        color: orangered;
+        top: 80%;
+        margin-left: 28%;
+        position: absolute;
+        margin left: 50px;
+        font-style: bold;
+        font-size: 100px;
+    }
+
+    #standbridge{
+        font-family: "Franklin Gothic Heavy";
+        color: black;
+        top: 80%;
+        margin-left: 46%;
+        position: absolute;
+        margin left: 50px;
+        font-style: bold;
+        font-size: 100px;
+        text-decoration: none;
+    }
+
+    #landing{
+        background-color: #ffffff;
+        text-decoration: none;
+        height: 1000px;
+    }
+
+    #portfolio{
+        color: orangered;
+        font-family: "OCR A Std";
+        height: 1100px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about{
+        color: orangered;
+        font-family: "OCR A Std";
+        height: 1000px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+      
+    #headshot{ 
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #skills{
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    }
+      
+    #cv{
+        color: orangered;
+        font-family: "OCR A Std";
+        height: 1000px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cv{
+        width: 45%;
+    }
+
+    #contact{
+        color: orangered;
+        font-family: "OCR A Std";
+        height: 1000px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    iframe{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        overflow:hidden;
+    }
+
+    a:visited {
+        color:#222222;
+    }
+
+    a:hover {
+        color:#222222;
+    }
+
+    a:active {
+        color:#222222;
+    }
+
+    nav{
+        color: orangered;
+        font-family: "OCR A Std";
+    }
+
+    #footerContact{
+        padding: 30px;
+        float: left;
+        width: 30%;
+    }
+
+    #footerCentre{
+        padding: 30px;
+        float: left;
+        width: 30%;
+    }
+
+    #footerLegal{
+        padding: 30px;
+        float: left;
+        width: 30%;
+    }
+
+    footer{
+        height: 200px;
+        background-color: black; 
+    }
+
+    #video{
+        width: 800px;
+        height: 450px;
+    }
+
+    .portfolioFilter a{
+        color: aliceblue;
+    }
+
+    div div a img{
+        width: 240px;
+        height: 140px;
+    }
+
+    .portfolioFilter a.current { 
+        font-weight:bold;
+    }
+
+    .portfolioContainer{
+        padding: 20px;
+        width: 100%;
+    }
+
+    img {
+        margin:5px;
+    }
+}
+
+/*Devices under 1600 and over 1200px(most laptops)*/
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    body{
+        background-color: #222222;
+    }
+      
+      #landingAnchor{
+          text-decoration: none;
+      }
+    
+    h1{
+      color: orangered;
+    }
+
+    #background{
+        width: 600px;
+        margin-left: 35%;
+        margin-top: 2%;
+        z-index: 0;
+    }
+
+    #orangeS{
+        font-family: "Franklin Gothic Heavy";
+        color: orangered;
+        top: -13%;
+        margin-left: 38%;
+        position: absolute;
+        margin left: 50px;
+        font-style: bold;
+        font-size: 530px;
+    }
+
+    #blackS{
+        font-family: "Franklin Gothic Heavy";
+        color: black;
+        top: 0%;
+        margin-left: 50%;
+        position: absolute;
+        margin left: 50px;
+        font-style: bold;
+        font-size: 530px;
+    }
+
+    #simon{
+        font-family: "Franklin Gothic Heavy";
+        color: orangered;
+        top: 80%;
+        margin-left: 28%;
+        position: absolute;
+        margin left: 50px;
+        font-style: bold;
+        font-size: 100px;
+    }
+
+    #standbridge{
+        font-family: "Franklin Gothic Heavy";
+        color: black;
+        top: 80%;
+        margin-left: 46%;
+        position: absolute;
+        margin left: 50px;
+        font-style: bold;
+        font-size: 100px;
+    }
+
+    #landing{
+        background-color: #ffffff;
+        text-decoration: none;
+        height: 1000px;
+    }
+
+    #portfolio{
+        color: orangered;
+        font-family: "OCR A Std";
+        height: 1100px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about{
+        color: white;
+        font-family: "OCR A Std";
+        height: 1000px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+      
+    #skills{
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    }
+      
+    #orange{
+      color: orangered;
+    }
+
+    #cv{
+        color: orangered;
+        font-family: "OCR A Std";
+        height: 1000px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cv{
+        width: 45%;
+    }
+
+    #contact{
+        color: orangered;
+        font-family: "OCR A Std";
+        height: 1000px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    iframe{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        overflow:hidden;
+    }
+
+    a:visited {
+        color:#222222;
+    }
+
+    a:hover {
+        color:#222222;
+    }
+
+    a:active {
+        color:#222222;
+    }
+
+    nav{
+        color: orangered;
+        font-family: "OCR A Std";
+    }
+
+    #footerContact{
+        padding: 30px;
+        float: left;
+        width: 30%;
+    }
+
+    #footerCentre{
+        padding: 30px;
+        float: left;
+        width: 30%;
+    }
+
+    #footerLegal{
+        padding: 30px;
+        float: left;
+        width: 30%;
+    }
+
+    footer{
+        height: 200px;
+        background-color: black; 
+    }
+
+    #video{
+        width: 800px;
+        height: 450px;
+    }
+
+    .portfolioFilter a{
+        color: aliceblue;
+    }
+
+    div div a img{
+        width: 240px;
+        height: 140px;
+    }
+
+    .portfolioFilter a.current { 
+        font-weight:bold;
+    }
+
+    .portfolioContainer{
+        padding: 20px;
+        width: 100%;
+    }
+
+    img {
+        margin:5px;
+    }
+}
+
+
+/*Devices over 300px and under 800px (Most Phones)*/
+@media screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 800px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      
+    body{
+        background-color: #222222;
+    }
+    
+    nav{
+        font-size: 45px;  
+        padding: 10px;
+        height: 60px;
+    }
+    .portfolioFilter{
+      font-size: 35px;
+    }
+      
+    h1{
+        color: orangered;
+        font-size: 70px;
+    }
+
+    #orange{
+      color: orangered;
+    }
+      
+    #background{
+        width: 600px;
+        margin-left: 35%;
+        margin-top: 2%;
+        z-index: 0;
+    }
+
+    #orangeS{
+        font-family: "Franklin Gothic Heavy";
+        color: orangered;
+        top: -4%;
+        margin-left: 38%;
+        position: absolute;
+        margin left: 50px;
+        font-style: bold;
+        font-size: 530px;
+    }
+
+    #blackS{
+        font-family: "Franklin Gothic Heavy";
+        color: black;
+        top: -1%;
+        margin-left: 50%;
+        position: absolute;
+        margin left: 50px;
+        font-style: bold;
+        font-size: 530px;
+    }
+
+    #simon{
+        font-family: "Franklin Gothic Heavy";
+        color: orangered;
+        top: 22%;
+        margin-left: 8%;
+        position: absolute;
+        margin left: 50px;
+        font-style: bold;
+        font-size: 200px;
+    }
+
+    #standbridge{
+        font-family: "Franklin Gothic Heavy";
+        color: black;
+        top: 27%;
+        margin-left: 8%;
+        position: absolute;
+        margin left: 50px;
+        font-style: bold;
+        font-size: 200px;
+    }
+      
+    #landing{
+        background-color: #ffffff;
+        text-decoration: none;
+        height: 1000px;
+    }
+
+    #portfolio{
+        color: orangered;
+        font-family: "OCR A Std";
+        height: 110%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about{
+        font-size: 50px;
+        color: white;
+        font-family: "OCR A Std";
+        font-size: 300%;
+        height: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #about img{
+        width: 50%;
+        height: 37%;
+      }
+
+    #cv{
+        color: orangered;
+        font-family: "OCR A Std";
+        height: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cv{
+        width: 45%;
+    }
+
+    #contact{
+        color: orangered;
+        font-family: "OCR A Std";
+        height: 100%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    iframe{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        overflow:hidden;
+    }
+
+    a:visited {
+        color:#222222;
+    }
+
+    a:hover {
+        color:#222222;
+    }
+
+    a:active {
+        color:#222222;
+    }
+    
+    a{
+      color: #222222;
+    }
+
+    nav{
+        color: orangered;
+        font-family: "OCR A Std";
+    }
+
+    #footerContact{
+        padding: 30px;
+        float: left;
+        width: 30%;
+    }
+
+    #footerCentre{
+        padding: 30px;
+        float: left;
+        width: 30%;
+    }
+
+    #footerLegal{
+        padding: 30px;
+        float: left;
+        width: 30%;
+    }
+
+    footer{
+        height: 200px;
+        background-color: black; 
+    }
+
+    #video{
+        width: 800px;
+        height: 450px;
+    }
+
+    .portfolioFilter a{
+        color: aliceblue;
+    }
+
+    div div a img{
+        width: 240px;
+        height: 140px;
+    }
+
+    .portfolioFilter a.current { 
+        font-weight:bold;
+    }
+
+    .portfolioContainer{
+        padding: 20px;
+        width: 100%;
+    }
+
+    img {
+        margin:5px;
+    }
+      
+    img[src^="images/thumbs/"]{
+         margin: 5px;
+         width: 512px;
+         height: 291px;
+    }
+}
+      
+
+/*Isotope CSS */
+
+.isotope-item {
+    z-index: 2;
+}
+    .isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+/* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+.isotope-item {
+    z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+/* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+#page-wrap { 
+  max-width: 500px; 
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+h1, h2 {
+  line-height: 1.2;
+}
+
+p, ul, h1 { 
+  margin: 0 0 1rem 0; 
+}
+
+.title{
+    text-align: center;
+}

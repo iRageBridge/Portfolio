@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Task Manager</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="images/task.png" alt="tab Icon">
+</head>
+
+<body id="mainBody">
+	<h1>Task Manager</h1><br/><br/>
+    <h3>Enter information into the fields below, click "Add to list" after each completed entry, and click "Print List" to display the Task Manager!</h3><br/><br/>
+    <div id="border">
+    	Enter Task Decription Here:<input type="text" id="descInput"><br/><br/>
+    	Enter Task Priority Here:<input type="number" id="priorInput" value=1><br/><br/>
+    	Enter Task Due Date Here:<input type="date" id="dateInput"><br/><br/>
+    	<button id="enter">Add To Table</button> | 
+        <button id="print">Print Table</button> |
+    	<button id="clear">Clear Table</button><br/><br/>
+    </div>
+       
+    <script>
+		var info=document.createElement("h3");
+		info.innerHTML="(Click on the table headings to sort columns)";
+		var tasks=[];
+		var mainBody=document.getElementById("mainBody");
+		var peopleTable=document.createElement("table");
+		peopleTable.setAttribute("id", "tableDesign");
+		var tableBody=document.createElement("tbody");
+		var heading=document.createElement("tr");
+		var id=document.createElement("th");
+		id.setAttribute("id", "sortID");
+		var desc=document.createElement("th");
+		desc.setAttribute("id", "sortDescription");
+		var prior=document.createElement("th");
+		prior.setAttribute("id", "sortPriority");
+		var due=document.createElement("th");
+		due.setAttribute("id", "sortDate");
+		var del=document.createElement("th");
+		id.innerHTML="ID";
+		desc.innerHTML="| Description |";
+		prior.innerHTML=" Priority |";
+		due.innerHTML=" Due Date |";
+		del.innerHTML=" Delete? |";
+		
+		document.getElementById("enter").onclick= function(){
+            if(descInput.value != ""){
+                var randomNumber = (Math.random() * 10) +1;
+			    randomNumber=Math.round(randomNumber);
+                var task={
+				    id: randomNumber,
+				    description: document.getElementById("descInput").value,
+				    priority: document.getElementById("priorInput").value,
+				    dueDate: document.getElementById("dateInput").value,
+                };
+			    tasks.push(task);
+            }
+            else{
+                alert("ERROR! Please Enter a Task Description");
+            }
+		}	
+		
+        document.getElementById("clear").onclick=function(){
+            mainBody.removeChild(peopleTable);
+            tasks=[];
+            clearTable();
+        }
+        
+		document.getElementById("print").onclick= printTable;
+		function printTable(){
+			mainBody.appendChild(info);
+			clearTable();
+			mainBody.appendChild(peopleTable);
+			peopleTable.appendChild(tableBody);
+			tableBody.appendChild(heading);
+			heading.appendChild(id);
+			heading.appendChild(desc);
+			heading.appendChild(prior);
+			heading.appendChild(due);
+			heading.appendChild(del);
+			for(var i = 0; i < tasks.length; i++){
+				var newRow=document.createElement("tr");
+			
+				var taskID=document.createElement("td");
+				taskID.innerHTML=tasks[i].id;
+				newRow.appendChild(taskID);
+				
+				var taskDescription=document.createElement("td");
+				taskDescription.innerHTML=tasks[i].description;
+				newRow.appendChild(taskDescription);
+					
+				var taskPriority=document.createElement("td");
+				taskPriority.innerHTML=tasks[i].priority;
+				newRow.appendChild(taskPriority);
+				
+				var taskDueDate=document.createElement("td");
+				taskDueDate.innerHTML=tasks[i].dueDate;
+				newRow.appendChild(taskDueDate);
+					
+				var deleteRowButton=document.createElement("button");
+				deleteRowButton.setAttribute("id", "deleteButton");
+				deleteRowButton.innerHTML="Delete";
+				
+				var deleteRow=document.createElement("td");
+				deleteRow.appendChild(deleteRowButton);
+				newRow.appendChild(deleteRow);
+				peopleTable.appendChild(newRow);						
+			
+				deleteRowButton.onclick=function(){
+					var j = this.parentNode.parentNode.rowIndex;
+					peopleTable.deleteRow(j-1);
+					tasks.splice(j-1,1);
+					clearTable();
+					printTable();
+				}
+			}		
+		}
+	
+		function clearTable(){
+			peopleTable.innerHTML="";
+		}
+			
+		desc.onclick=function(){
+			tasks.sort(function(a,b){
+				var nameA=a.description.toLowerCase();
+				var nameB=b.description.toLowerCase();
+				if (nameA < nameB){
+					return -1;
+				}
+				if (nameA > nameB){
+					return 1;
+				}
+				else{
+					return 0;
+				}
+			})
+			clearTable();
+			printTable();
+		}
+	
+		id.onclick=function(){
+			tasks.sort(sortAgeFunction)
+			function sortAgeFunction(a,b){
+			return a.id-b.id;
+			}
+			clearTable();
+			printTable();
+		}
+	
+		prior.onclick=function(){
+			tasks.sort(sortPriorFunction)
+			function sortPriorFunction(a,b){
+				return a.priority-b.priority;
+			}
+			clearTable();
+			printTable();
+		}
+		
+		due.onclick=function(){
+			tasks.sort(sortPriorFunction)
+			function sortPriorFunction(a,b){
+				return a.priority-b.priority;
+			}
+			clearTable();
+			printTable();
+		}
+</script>			
+</body>
+</html>

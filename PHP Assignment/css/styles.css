@@ -1,0 +1,100 @@
+*{
+    font-family: "Courier New",serif !important;
+    font-size: larger;
+}
+
+img{
+    height: 200px;
+    float: left;
+    display: inline;
+}
+
+#left{
+    width: 49%;
+    height: 220px;
+    float: left;
+}
+
+#right{
+    width: 49%;
+    height: 220px;
+    float: right;
+    text-align: right;
+}
+
+
+.addressField .dob{
+    clear:both;
+    margin: 0 auto;
+    float: right;
+    margin-right:0;
+}
+
+hr{
+    width: 600px;
+}
+
+.cvFields{
+    text-align: left;
+    font-family: "Courier New",serif !important;
+    font-size: larger;
+}
+
+h1{
+    text-align: center;
+}
+
+.form-style-1 {
+    margin:10px auto;
+    max-width: 500px;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#downloadRadio{
+    float: right;
+    font-weight: bold;
+}
+
+#onlineRadio{
+    float: left;
+    font-weight: bold;
+}
+
+.form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+.form-style-1 label {
+    margin: 0 0 3px 0;
+    padding: 0px;
+    display: block;
+    font-weight: bold;
+}
+
+#submit{
+    background: #4B99AD;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+
+.form-style-1 .field-divided{
+    width: 49%;
+}
+
+.form-style-1 .field-long{
+    width: 100%;
+}
+.form-style-1 .field-select{
+    width: 100%;
+}
+.form-style-1 .field-textarea{
+    height: 100px;
+}
+
+.form-style-1 .required{
+    color:red;
+}

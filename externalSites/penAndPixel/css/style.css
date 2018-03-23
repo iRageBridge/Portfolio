@@ -1,0 +1,486 @@
+/*Media Queries*/
+@media only screen and (max-width: 500px) {
+    img[src^="images/submissions/"]{
+         margin: 5px;
+         width: 200%;
+         height: 200%;
+    }
+    .navbar-nav > li > a, .navbar-brand {
+        padding-top:4px !important; 
+        padding-bottom:0 !important;
+        height: 10%;
+        font-size: 20px;
+    }
+    .navbar {
+        min-height:10% !important;
+    }
+    .navbar-brand{
+        font-size: 20px;
+    }
+    
+    .portfolioFilter a {
+        font-size: 17px;
+        margin-right: 10px; 
+	    color:#666;
+	    text-decoration:none;
+    }
+    
+    #map{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 60px;
+        overflow:hidden;
+        height:30%;
+        width:90%;
+    }
+    
+    navbar-nav{
+        font-size: 100px;
+    }
+    
+}
+
+@media only screen and (max-width: 1080px) {
+    img[src^="images/submissions/"]{
+         margin: 5px;
+         width: 300px;
+         height: 300px;
+    }
+    
+    .portfolioFilter a {
+        font-size: 27px;
+        margin-right: 10px; 
+	    color:#666;
+	    text-decoration:none;
+    }
+    
+    #map{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 60px;
+        overflow:hidden;
+        height:50%;
+        width:90%;
+    }
+    
+    #landing img{
+        width: 98%;
+        height: 100%;
+    }
+    
+    .sponsors img{
+        width: 300px;
+        height: 150px;
+        float: left;
+    }
+    
+    .sponsors div{
+        margin: 10px;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+        float: left;
+        width: 300px;
+    }
+    
+     #findUs{
+        padding: 10px;
+        font-size: 36px;
+        margin-left: 40%;
+        color: #eee8f6;
+        width: 40%;
+    }
+    
+    #aboutHeading{
+        margin-left: 30%;
+        padding: 10px;
+        font-size: 36px;
+        color: #eee8f6;
+        width: 40%;
+    }
+    
+    #aboutUs{ 
+        color: #eee8f6;
+        font-size: 24px;
+        width: 100%;
+        padding: 50px;
+    }
+    
+    #pen{
+        color: black;
+        text-decoration: none;
+        font-family: cursive;
+        font-size: 100px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        margin-left: 100px;
+}
+
+    #and{
+        color: black;
+        text-decoration: none;
+        font-family: impact;
+        font-size: 100px;
+        position: absolute;
+        top: -350px;
+        margin-left: 450px;
+    }
+
+    #pixel{
+        font-family: impact;
+        visibility: hidden;
+        font-size: 100px;
+        color: #00FF00;
+        position: absolute;
+        top: 300px;
+        margin-left: 650px;
+    }
+    
+    #cont{
+        opacity: 0;
+        font-family: impact;
+        font-size: 500%;
+        color: #eee8f6;
+        position: absolute;
+        top: 700px;
+        margin-left: 50px;
+    }
+    .welcome{
+        background-color: #eee8f6;
+        font-size: 24px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    img[src^="images/submissions/"]{
+         margin: 5px;
+         width: 150px;
+         height: 150px;
+    }
+    
+    .portfolioFilter a { 
+        margin-right: 10px; 
+	    color:#666;
+        text-decoration:none;
+    }
+        
+    #map{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 60px;
+        overflow:hidden;
+        height: 800px;
+        width:80%;
+    }
+    
+    #findUs{
+        padding: 10px;
+        font-size: 48px;
+        color: #eee8f6;
+        width: 500px;
+    }
+    
+    #aboutHeading{
+        padding: 10px;
+        font-size: 48px;
+        color: #eee8f6;
+        width: 500px;
+    }
+    
+    #aboutUs{ 
+        color: #eee8f6;
+        font-size: 36px;
+        float: right;
+        width: 100%;
+        text-align: center;
+        padding: 80px;
+    }
+    
+    #landing img{
+        width: 98%;
+        height: 100%;
+        padding: 50px;
+    }
+    
+    .sponsors img{
+        width: 300px;
+        height: 150px;
+        float: left;
+    }
+    
+    .sponsors div{
+        margin: 10px;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+        float: left;
+        width: 30%;
+    }
+    
+    .welcome{
+        background-color: #eee8f6;
+        font-size: 36px;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #pen{
+        color: black;
+        text-decoration: none;
+        font-family: cursive;
+        font-size: 950%;
+        position: absolute;
+        top: 15%;
+        margin-left: 10%;
+    }
+
+    #and{
+        color: black;
+        text-decoration: none;
+        font-family: impact;
+        font-size: 1000%;
+        position: absolute;
+        top: -25%;
+        margin-left: 45%;
+    }
+
+    #pixel{
+        font-family: impact;
+        visibility: hidden;
+        font-size: 950%;
+        color: #00FF00;
+        position: absolute;
+        top: 65%;
+        margin-left: 65%;
+    }
+    
+    #angle{
+        font-size: 1000%;
+        color: #00FF00;
+        position: absolute;
+        top: 50%;
+        margin-left: 65%;
+    }
+    
+    #cont{
+        opacity: 0;
+        font-family: impact;
+        font-size: 500%;
+        color: #eee8f6;
+        position: absolute;
+        top: 80%;
+        margin-left: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1500px) {
+    img[src^="images/submissions/"]{
+         margin: 5px;
+         width: 400px;
+         height: 400px;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1400px){
+     #landing img{
+        height: 80%;
+    }
+}
+
+body {
+    font-family: Georgia;
+    font-family: serif;
+    min-height: 2000px;
+    background-color: #333333;
+}
+
+/*Changing style on the bootsrap Navbar*/
+
+.navbar-nav > li > a, .navbar-brand {
+    padding:30px !important; 
+    height: 100px;
+    font-size: 37px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+/*Changing style on all footer elements*/
+
+#footerContact{
+    padding: 30px;
+    float: left;
+    width: 30%;
+}
+
+#footerCentre{
+    padding: 30px;
+    float: left;
+    width: 30%;
+}
+
+#footerLegal{
+    padding: 30px;
+    float: left;
+    width: 30%;
+}
+
+footer{
+    height: 200px;
+    background-color: black; 
+}
+
+.portfolioFilter{
+    background-color: #eee8f6;
+}
+
+#information{
+    background-color: #333333;
+}
+
+.portfolioFilter a {
+    font-size: 36px;
+    margin-right: 10px; 
+	color:#666;
+	text-decoration:none;
+}
+
+#landing{
+    height: 1000px;
+    position: relative;
+    background-color: #333333;
+    height: 100%;
+    width: 100%;
+}
+
+.findUs{
+    height: 100%;
+}
+
+.contact{
+    height: 1000px;
+    background-color: #333333;
+}
+
+.sponsors{
+    color: #eee8f6;
+    height: 1000px;
+    background-color: #333333;
+}
+
+.portfolioFilter a.current { 
+    font-weight:bold;
+}
+
+.portfolioContainer{
+    padding: 20px;
+    background-color: #333333;
+    width: 100%;
+}
+
+img {
+    margin:5px;
+}
+
+.space{
+    background-color: #333333;
+    height: 100px;
+}
+
+.space1{
+    background-color: #333333;
+    height: 200px;
+}
+
+.space2{
+    background-color: #333333;
+    height: 200px;
+}
+
+.space3{
+    background-color: #333333;
+    height: 200px;
+}
+
+.portfolioFilter a { 
+    margin-right: 10px; 
+	color:#666;
+	text-decoration:none;
+}
+
+.portfolioFilter a.current { 
+    font-weight:bold;
+}
+
+.portfolioContainer{
+    width: 100%;
+}
+
+#gmap_canvas{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/*Isotope CSS */
+
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
